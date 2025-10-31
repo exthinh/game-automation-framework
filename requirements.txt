@@ -1,0 +1,51 @@
+# Game Automation Framework - Requirements
+# Python 3.11+
+
+# Core Dependencies
+pure-python-adb==0.3.0.dev0      # Android Debug Bridge (no binary dependencies)
+opencv-python==4.8.1.78          # Computer vision and template matching
+pytesseract==0.3.10              # OCR text recognition
+Pillow==10.1.0                   # Image processing
+numpy==1.26.2                    # Numerical operations
+
+# UI Framework
+PyQt6==6.6.1                     # Modern Qt6 bindings for UI
+PyQt6-Qt6==6.6.1                # Qt6 libraries
+
+# Configuration & Data
+pydantic==2.5.2                  # Data validation
+python-dotenv==1.0.0             # Environment variable management
+
+# Utilities
+loguru==0.7.2                    # Advanced logging
+schedule==1.2.0                  # Task scheduling helper
+python-dateutil==2.8.2           # Date/time utilities
+pytz==2023.3.post1               # Timezone support
+
+# Testing
+pytest==7.4.3                    # Testing framework
+pytest-cov==4.1.0                # Code coverage
+pytest-mock==3.12.0              # Mocking support
+pytest-asyncio==0.21.1           # Async testing
+
+# Development
+black==23.12.0                   # Code formatting
+flake8==6.1.0                    # Linting
+mypy==1.7.1                      # Type checking
+isort==5.13.2                    # Import sorting
+
+# Packaging
+pyinstaller==6.3.0               # Create standalone executables
+
+# Optional - For advanced features
+# psutil==5.9.6                  # System monitoring
+# requests==2.31.0               # HTTP requests (if needed for API)
+# websockets==12.0               # WebSocket support (if needed)
+
+# Platform-specific notes:
+# Windows: Tesseract-OCR must be installed separately
+#          Download from: https://github.com/UB-Mannheim/tesseract/wiki
+#          Add to PATH or set TESSDATA_PREFIX environment variable
+#
+# Linux: sudo apt-get install tesseract-ocr
+# macOS: brew install tesseract

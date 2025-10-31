@@ -1,0 +1,84 @@
+{
+  "game": "ROK",
+  "activities": [
+    {
+      "id": "alliance_help",
+      "name": "Alliance Help",
+      "enabled": true,
+      "interval_hours": 0,
+      "interval_minutes": 10,
+      "priority": 5,
+      "start_time": null,
+      "end_time": null,
+      "max_retries": 3,
+      "retry_delay_minutes": 5,
+      "max_execution_seconds": 120,
+      "parameters": {
+        "help_all": true,
+        "max_helps": 50
+      }
+    },
+    {
+      "id": "vip_collection",
+      "name": "VIP Collection",
+      "enabled": false,
+      "interval_hours": 24,
+      "interval_minutes": 0,
+      "priority": 3,
+      "start_time": null,
+      "end_time": null,
+      "max_retries": 3,
+      "retry_delay_minutes": 30,
+      "max_execution_seconds": 60,
+      "parameters": {
+        "collect_all_rewards": true
+      }
+    },
+    {
+      "id": "gathering",
+      "name": "Resource Gathering",
+      "enabled": false,
+      "interval_hours": 0,
+      "interval_minutes": 5,
+      "priority": 2,
+      "start_time": "06:00",
+      "end_time": "23:00",
+      "max_retries": 3,
+      "retry_delay_minutes": 5,
+      "max_execution_seconds": 300,
+      "parameters": {
+        "resource_types": ["food", "wood", "stone", "gold"],
+        "resource_priority": ["gold", "stone", "wood", "food"],
+        "min_amount": 50000,
+        "max_march_distance": 30,
+        "min_troops_for_gather": 5000,
+        "auto_return_on_full": true,
+        "avoid_enemy_territory": true
+      }
+    },
+    {
+      "id": "barbarian_hunt",
+      "name": "Barbarian Hunt",
+      "enabled": false,
+      "interval_hours": 2,
+      "interval_minutes": 0,
+      "priority": 1,
+      "start_time": "06:00",
+      "end_time": "23:00",
+      "max_retries": 3,
+      "retry_delay_minutes": 10,
+      "max_execution_seconds": 180,
+      "parameters": {
+        "target_level": 5,
+        "min_level": 3,
+        "max_level": 7,
+        "min_troops": 50,
+        "auto_heal": true,
+        "commander_preset": "combat_1",
+        "search_radius": 50
+      }
+    }
+  ],
+  "created_at": "2025-10-31T00:00:00",
+  "last_updated": "2025-10-31T00:00:00"
+}
